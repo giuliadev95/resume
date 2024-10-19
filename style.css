@@ -1,0 +1,57 @@
+:root {
+    --white: #ffff;
+    --slightly-desaturated-cyan: #5FB4A2;
+    --dark-blue: #203A4C;
+    --grayish-dark-blue: #33323D;
+    
+    --very-light-grey-bg: #FAFAFA;
+    --light-grey-text-field: #EAEAEB;
+    --bright-red-errors: #F43030;
+    
+    --headings-text: "Ibarra Real Nova", system-ui;
+    --body-text: "Public Sans", sans-serif;
+    --bold: 600;
+    --norma: normal;
+}
+
+/* Global components */
+*{
+    /*border: 1px solid red;*/
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+
+body {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0px 40px;
+}
+
+a, button{
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+}
+
+.go-to-about-me a {
+    color: var(--white);
+}
+
+.see-portfolio a {
+    color: var(--grayish-dark-blue);
+}
+
+/* hr lines */
+.top-line {
+    margin-top: 40px;
+    height: 1px;
+    background-color: var(--light-grey-text-field);
+}
+
+.bottom-line {
+    height: 1px;
+    background-color: var(--light-grey-text-field);
+    
+}
