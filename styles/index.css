@@ -306,6 +306,62 @@ h2 {
 }
 
 /*
+    -------
+    SKILLS H3, Ibarra Real Nova Regular, 32px, 36px Line, -0,29 Character
+    -------
+*/
+h3 {
+    font-family: "Ibarra Real Nova", serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal; 
+    font-size: 32px;
+    line-height: 36px;
+    margin: 40px 0px;
+    color: var(--grayish-dark-blue);
+}
+
+.skill svg,
+.tool svg {
+    height: 48px;
+}
+
+
+#skills {
+    margin-bottom: 90px;
+}
+
+.my-skills, 
+.my-tools {
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+    align-items: flex-start;
+    justify-content: center;
+    flex-wrap: nowrap;
+}
+
+.my-skills ul,
+.my-tools ul {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 0px;
+}
+
+.my-skills p {
+    font-family: "Public Sans", serif;
+    font-optical-sizing: auto;
+    font-weight: lighter;
+    font-style: normal;
+    line-height: 30px;
+    font-size: 18px;
+    color: var(--dark-blue);
+    margin: 0;
+
+}
+
+/*
     -----------
     PORTFOLIO
     -----------
@@ -572,7 +628,7 @@ form > button {
 
     .profile-image {
         margin: auto;
-        width: 80%;
+        width: 100%;
         height: auto;
     }
 
@@ -592,6 +648,18 @@ form > button {
     }
 
     /*
+    -------
+    SKILLS
+    _______
+    */
+    .my-skills ul,
+    .my-tools ul {
+        display: flex;
+        flex-direction: row;
+        
+    }
+
+    /*
     ----------
     PORTFOLIO
     ----------
@@ -604,7 +672,7 @@ form > button {
         grid-gap: 100px;
         grid-template-areas: 
         "a b"; 
-}
+    }
 
     .manage, .bookmark {
         grid-area: a; 
@@ -717,15 +785,6 @@ form > button {
         color: var(--white);
       
     }
-}
-
-    
-@media screen and (min-width:1089px)  {
- /*   .text-box {
-        width: 520px;
-        height: 250px;
-        margin-top: -250px;
-    } */
 }
 
 

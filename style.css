@@ -55,3 +55,14 @@ a {
     background-color: var(--light-grey-text-field);
     
 }
+
+p {
+    font-family: "Public Sans", serif;
+    font-optical-sizing: auto;
+    font-weight: lighter;
+    font-style: normal;
+    line-height: 30px;
+    font-size: 18px;
+    color: var(--dark-blue);
+    margin: 0;
+}

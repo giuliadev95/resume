@@ -66,12 +66,7 @@ document.addEventListener("DOMContentLoaded", function() {
             function replacePortrait() {
                 var windowWidth = window.innerWidth || document.documentElement.clientWidth;
                 
-                if(windowWidth >= 768 && windowWidth < 1024) {
-                    profile_image.src = "./images/homepage/tablet/no-bg.png";
-                    console.clear();
-                    console.log(`profile-image src: ${profile_image.src}`);
-                }
-                else if (windowWidth >= 1024) {
+                if (windowWidth >= 768) {
                     profile_image.src = "./images/homepage/desktop/adobe-busto-nobg.png"; 
                     console.clear();
                     console.log(`profile-image src: ${profile_image.src}`);
