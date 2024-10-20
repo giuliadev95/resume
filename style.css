@@ -16,10 +16,10 @@
 
 /* Global components */
 *{
-    /*border: 1px solid red;*/
     scroll-behavior: smooth;
     box-sizing: border-box;
 }
+
 
 body {
     max-width: 1200px;
@@ -65,4 +65,13 @@ p {
     font-size: 18px;
     color: var(--dark-blue);
     margin: 0;
+}
+
+h1:focus-visible,
+h2:focus-visible,
+h3:focus-visible,
+p:focus-visible,
+button:focus-visible {
+    border: 4px solid var(--slightly-desaturated-cyan);
+    outline: none; 
 }

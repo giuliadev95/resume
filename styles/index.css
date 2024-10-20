@@ -143,12 +143,9 @@ li {
         line-height: 30px;
         text-decoration: none;
         color: var(--white);
-    }
-
-.navigation-links a:hover, .navigation-links a:focus-visible {
-    background-color: var(--slightly-desaturated-cyan);
-    outline: none;
 }
+
+
 
 /*  ---------------------
     TABLET / DESKTOP MENU
@@ -157,11 +154,6 @@ li {
 .desktop-navigation-links {
     display:none;
 }
-
-#footer .desktop-navigation-links  {
-    display:inline;
-}
-
 
 .desktop-navigation-links a {
     text-decoration: none;
@@ -180,10 +172,19 @@ li {
     border: 3px solid var(--slightly-desaturated-cyan);
     border-radius: 2px;
 }
- 
+
 .desktop-navigation-links a:hover {
-      color: var(--slightly-desaturated-cyan);
-    }
+    color: var(--slightly-desaturated-cyan);
+}
+
+#footer .desktop-navigation-links  {
+    display:inline;
+}
+
+#footer .desktop-navigation-links a:hover {
+    color: var(--slightly-desaturated-cyan);
+}
+
 
 /*  ---------------------
     MAIN SECTION
@@ -219,6 +220,13 @@ li {
     font-style: normal;
     line-height: 30px;
     letter-spacing: 2px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.go-to-about-me:hover {
+    background-color: var(--slightly-desaturated-cyan);
+    border: var(--slightly-desaturated-cyan);
+
 }
 
 /*  -------------
@@ -287,6 +295,12 @@ li {
     line-height: 30px;
     letter-spacing: 2px;
     text-align: center;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.see-portfolio:hover {
+    color: var(--white);
+    background-color: var(--grayish-dark-blue);
 }
 
 .project-container {
@@ -452,6 +466,13 @@ h3 {
     letter-spacing: 2px;
     text-align: center;
     padding-top: 2%;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.see-live-project:hover {
+    background-color: var(--slightly-desaturated-cyan);
+    color: var(--white);
+    border:1px solid var(--slightly-desaturated-cyan);
 }
 
 /*  --------
@@ -476,6 +497,11 @@ h3 {
     #footer .desktop-navigation-links {
         padding: 0px;
         margin: 0px;
+        transition:desktop-navigation-links
+    }
+
+    #footer .desktop-navigation-links {
+        color: var(--slightly-desaturated-cyan);
     }
 
     .social-icons {
@@ -499,6 +525,7 @@ h3 {
     #footer .desktop-navigation-links a {
         color:var(--white);
         font-weight: 200;
+        transition: background-color 0.3s ease, color 0.3s ease;
     }
 
     #footer svg {
