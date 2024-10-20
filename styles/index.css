@@ -248,8 +248,12 @@ li {
     margin: 0px 0px 30px 0px;
     width: 100%;
     height: auto;
-   
+    border: 1px solid #203A4C;
+    border-radius: 20px;
+    padding: 4px;
 }
+   
+
 
 .about-me-paragraph {
     font-family: "Public Sans", serif;
@@ -260,6 +264,10 @@ li {
     font-size: 18px;
     color: var(--dark-blue);
     margin: 0;
+}
+
+.about-me-paragraph br {
+    display: none;
 }
 
 .see-portfolio {
@@ -443,60 +451,7 @@ h3 {
     line-height: 30px;
     letter-spacing: 2px;
     text-align: center;
-}
-
-form {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto;
-    grid-gap: 10px;
-}
-
-label {
-    font-family: "Public Sans", system-ui;
-    font-size: 16px;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
-    line-height: 30px;
-    text-decoration: none;
-}
-
-input {
-    display: block;
-    height: 50px;
-}
-
-input, textarea {
-    background-color: var(--light-grey-text-field);
-    border-radius: 2px;
-    border: none;
-    margin-bottom: 30px;
-    font-family: "Public Sans", system-ui;
-    font-size: 16px;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
-    line-height: 30px;
-    text-decoration: none;
-        
-}
-
-form > button {
-    width: 200px;
-    height: 50px;
-    margin-bottom: 60px;
-    background-color: var(--dark-blue);
-    color: var(--white);
-    border: 1px solid var(--dark-blue);
-    border-radius: 2px;
-    font-family: "Public Sans", system-ui;
-    font-size: 16px;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
-    line-height: 30px;
-    letter-spacing: 2px;
+    padding-top: 2%;
 }
 
 /*  --------
@@ -548,6 +503,31 @@ form > button {
 
     #footer svg {
         color: var(--white);
+    }
+
+    #contact-links {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 50px;
+        align-content: flex-start;
+        justify-content: center;
+        margin: 0;
+        padding: 0;
+    }
+
+    #contact-links svg {
+        height: 40px;
+    }
+
+
+/*  ----------------------------------------------------------------
+    MEDIA QUERY FOR profile-image on 442 < LARGE SMARTPHONES > 768px
+    ---------------------------------------------------------------- */
+    @media screen and (min-width: 442px) and (max-width: 767px) {
+        .profile-image {
+            width: 80%;
+        }
     }
 
 /*  -------------------------------
@@ -615,8 +595,10 @@ form > button {
 
     .profile-image {
         margin: auto;
-        width: 100%;
-        height: auto;
+        border: none;
+        border-radius: 10px;
+        padding: 0px;
+
     }
 
     .description {
@@ -625,6 +607,10 @@ form > button {
         grid-template-rows: auto;
         grid-template-columns: 1fr;
         align-content: space-between;
+    }
+
+    .about-me-paragraph br {
+        display: block;
     }
 
     .hr-line {
@@ -643,7 +629,7 @@ form > button {
     .my-tools ul {
         display: flex;
         flex-direction: row;
-        
+        gap: 50px;     
     }
 
     /*
@@ -720,6 +706,12 @@ form > button {
     */
     #contact > hr {
         display: none;
+    }
+
+    #contact-links {
+    flex-direction: row;
+    justify-content: flex-start;
+
     }
 
     /*
